@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            margin-top: 200px;
+            margin-left: 600px;
+            height:300px;
+            width:300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .ball{
+            border-radius: 10%;
+            margin-bottom: 20px;
+            height: 10px;
+            width:200px;
+            background: plum;
+        }
+        .small{
+            height:8px;
+            width: 8px;
+            background: black;
+            animation: bounce 1.2s infinite  alternate;
+
+        }
+        @keyframes bounce{
+            from{
+                transform: translatex(0);
+            }
+            to{
+                transform: translatex(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Loading..</h3><br>
+        <div class="ball">
+            <div class="small"></div>
+        </div>
+    </div>
+</body>
+</html>
